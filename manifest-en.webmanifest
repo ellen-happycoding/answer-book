@@ -1,0 +1,17 @@
+{
+  "name": "Book of Answers",
+  "short_name": "Answers",
+  "start_url": "./index-en.html",
+  "display": "standalone",
+  "background_color": "#f7efe1",
+  "theme_color": "#f4efe6",
+  "description": "Enter one number and receive a short line of guidance.",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

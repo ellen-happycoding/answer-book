@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe6">
+  <title>答案之书</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone-frame">
+      <header class="hero">
+        <div class="language-switch">
+          <span class="language-pill active">中文</span>
+          <a class="language-pill" href="./index-en.html">English</a>
+        </div>
+        <p class="eyebrow">Daily Answer</p>
+        <h1>答案之书</h1>
+        <p class="subtitle">每天输入一个数字，收下一句简短的指引。</p>
+      </header>
+
+      <section class="panel input-panel">
+        <label class="field-label" for="lucky-number">今天的数字</label>
+        <div class="input-row">
+          <input id="lucky-number" name="lucky-number" type="number" inputmode="numeric" placeholder="例如 17">
+          <button id="answer-btn" type="button">翻开一页</button>
+        </div>
+        <p class="hint">同一个数字会得到同一句话，适合做你自己的每日仪式。</p>
+      </section>
+
+      <section class="panel answer-panel">
+        <p class="answer-label">今日指引</p>
+        <blockquote id="answer-text">先输入一个数字，再轻轻点开答案。</blockquote>
+        <div class="meta-row">
+          <span id="answer-number">数字未填写</span>
+          <button id="copy-btn" type="button" class="ghost-btn">复制</button>
+        </div>
+      </section>
+
+      <section class="panel history-panel">
+        <div class="section-head">
+          <h2>最近翻阅</h2>
+          <button id="clear-btn" type="button" class="ghost-btn">清空</button>
+        </div>
+        <ul id="history-list" class="history-list">
+          <li class="empty-state">还没有记录，今天先翻开第一句吧。</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

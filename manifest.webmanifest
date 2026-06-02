@@ -1,0 +1,17 @@
+{
+  "name": "答案之书",
+  "short_name": "答案之书",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7efe1",
+  "theme_color": "#f4efe6",
+  "description": "输入一个数字，收下一句简短的今日指引。",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

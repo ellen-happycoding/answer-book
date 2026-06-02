@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe6">
+  <title>Book of Answers</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <link rel="manifest" href="./manifest-en.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone-frame">
+      <header class="hero">
+        <div class="language-switch">
+          <a class="language-pill" href="./index.html">中文</a>
+          <span class="language-pill active">English</span>
+        </div>
+        <p class="eyebrow">Daily Answer</p>
+        <h1>Book of Answers</h1>
+        <p class="subtitle">Enter one number each day and receive a short line of guidance.</p>
+      </header>
+
+      <section class="panel input-panel">
+        <label class="field-label" for="lucky-number">Today's Number</label>
+        <div class="input-row">
+          <input id="lucky-number" name="lucky-number" type="number" inputmode="numeric" placeholder="For example 17">
+          <button id="answer-btn" type="button">Open a Page</button>
+        </div>
+        <p class="hint">The same number always leads to the same answer, so it can become your daily ritual.</p>
+      </section>
+
+      <section class="panel answer-panel">
+        <p class="answer-label">Today's Guidance</p>
+        <blockquote id="answer-text">Enter a number first, then gently open the answer.</blockquote>
+        <div class="meta-row">
+          <span id="answer-number">No number yet</span>
+          <button id="copy-btn" type="button" class="ghost-btn">Copy</button>
+        </div>
+      </section>
+
+      <section class="panel history-panel">
+        <div class="section-head">
+          <h2>Recent Entries</h2>
+          <button id="clear-btn" type="button" class="ghost-btn">Clear</button>
+        </div>
+        <ul id="history-list" class="history-list">
+          <li class="empty-state">No entries yet. Let today be the first one.</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="./script-en.js"></script>
+</body>
+</html>
